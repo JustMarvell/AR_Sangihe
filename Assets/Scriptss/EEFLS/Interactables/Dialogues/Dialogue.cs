@@ -32,7 +32,7 @@ public class Dialogue
     public bool useCustomCloseDialogueSound;
     public EventReference closeDialogueSound;
 
-    [Space]
+    [Header("Sentences")]
 
     [TextArea(3, 10)]
     public string[] sentences;
@@ -40,6 +40,12 @@ public class Dialogue
     public string[] nextSentences;
     [TextArea(3, 10)]
     public string[] finalSentences;
+
+    [Header("VoiceOver")]
+    public bool useVoiceOver = false;
+    public EventReference[] sentencesVO;
+    public EventReference[] nextSentencesVO;
+    public EventReference[] finalSentencesVO;
 
     [Header("Optional Question")]
     public Question question;
