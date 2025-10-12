@@ -97,3 +97,7 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+
+# Package Manager Assets | Download seperately
+/[Aa]ssets/Free_UI_Click_Sound_Effects_Pack/*
