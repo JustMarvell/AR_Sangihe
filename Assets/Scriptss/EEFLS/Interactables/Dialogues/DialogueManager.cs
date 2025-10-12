@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using NUnit.Framework;
+using FMODUnity;
 using TMPro;
 using UnityEngine;
 
@@ -22,6 +22,10 @@ public class DialogueManager : MonoBehaviour
 
     public static DialogueManager instance;
 
+    [Header("Sound Settings")]
+    [SerializeField] private EventReference dialogueOpenSound;
+    [SerializeField] private EventReference dialogueCloseSound;
+
     void Awake()
     {
         if (instance != null)
@@ -38,6 +42,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        // play sound
+        if (dialogue.useCustomOpenDialogueSound)
+            AudioManager.instance.PlayOneShot(dialogue.openDialogueSound, Camera.main.transform.position);
+        else
+            AudioManager.instance.PlayOneShot(dialogueOpenSound, Camera.main.transform.position);
+
         Debug.Log("Dialog Start with : " + dialogue.name);
         PlayerInteraction.onInteraction = true;
         IsInDialogue = true;
@@ -107,6 +117,13 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
+        // play dialogue close sound
+         if (dlg.useCustomCloseDialogueSound)
+            AudioManager.instance.PlayOneShot(dlg.closeDialogueSound, Camera.main.transform.position);
+        else
+            AudioManager.instance.PlayOneShot(dialogueCloseSound, Camera.main.transform.position);
+
+
         PlayerInteraction.onInteraction = false;
         Debug.Log("End of dialogue");
         animator.SetBool("IsOpen", false);
