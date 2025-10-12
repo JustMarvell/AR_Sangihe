@@ -771,6 +771,22 @@ MonoBehaviour:
     RewardItem: {fileID: 11400000, guid: 43b18c0d92b90b19e81d8b60ec95bfb6, type: 2}
     haveFinishedInteracting: 0
     interactionID: NPC_Qwstn
+    useCustomOpenDialogueSound: 0
+    openDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    useCustomCloseDialogueSound: 0
+    closeDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     sentences:
     - This is a NPC test
     - Fist the NPC will give an information
@@ -780,6 +796,10 @@ MonoBehaviour:
     - Congratulation
     finalSentences:
     - This is the final sentences
+    useVoiceOver: 0
+    sentencesVO: []
+    nextSentencesVO: []
+    finalSentencesVO: []
     question:
       haveQuestion: 1
       questionText: What is 1 + 1 = ?
@@ -1005,6 +1025,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &268251533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268251534}
+  - component: {fileID: 268251535}
+  m_Layer: 0
+  m_Name: FMOD Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &268251534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268251533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1422108874}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268251535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268251533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019bd04bd275b4d0c8814ff5d241fb4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <dialogueEnter>k__BackingField:
+    Guid:
+      Data1: -597759810
+      Data2: 1277070054
+      Data3: 442198715
+      Data4: -1516975805
+    Path: event:/Dialogues/OpenDialogue
+  <dialogueClose>k__BackingField:
+    Guid:
+      Data1: -989585323
+      Data2: 1212110277
+      Data3: -1921275227
+      Data4: 374023461
+    Path: event:/Dialogues/ExitDialogue
 --- !u!1 &356726098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1129,22 @@ MonoBehaviour:
     RewardItem: {fileID: 11400000, guid: 43b18c0d92b90b19e81d8b60ec95bfb6, type: 2}
     haveFinishedInteracting: 0
     interactionID: NPC_QWSTRQEMT
+    useCustomOpenDialogueSound: 0
+    openDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    useCustomCloseDialogueSound: 0
+    closeDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     sentences:
     - This is a NPC test
     - First the NPC will ask for an item
@@ -1060,6 +1154,10 @@ MonoBehaviour:
     - Next, the NPC will ask a question
     finalSentences:
     - This is the final sentences
+    useVoiceOver: 0
+    sentencesVO: []
+    nextSentencesVO: []
+    finalSentencesVO: []
     question:
       haveQuestion: 1
       questionText: What is 1 + 1 = ?
@@ -1889,6 +1987,22 @@ MonoBehaviour:
     RewardItem: {fileID: 11400000, guid: 43b18c0d92b90b19e81d8b60ec95bfb6, type: 2}
     haveFinishedInteracting: 0
     interactionID: NPC_RRWD
+    useCustomOpenDialogueSound: 0
+    openDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    useCustomCloseDialogueSound: 0
+    closeDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     sentences:
     - This is a NPC test
     - To continue to next sentence and receive a reward
@@ -1899,6 +2013,10 @@ MonoBehaviour:
     - Congratulation
     finalSentences:
     - This is the final sentences
+    useVoiceOver: 0
+    sentencesVO: []
+    nextSentencesVO: []
+    finalSentencesVO: []
     question:
       haveQuestion: 0
       questionText: 
@@ -2580,9 +2698,9 @@ GameObject:
   m_Component:
   - component: {fileID: 934592843}
   - component: {fileID: 934592842}
-  - component: {fileID: 934592841}
   - component: {fileID: 934592844}
   - component: {fileID: 934592845}
+  - component: {fileID: 934592846}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2590,14 +2708,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &934592841
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934592840}
-  m_Enabled: 1
 --- !u!20 &934592842
 Camera:
   m_ObjectHideFlags: 0
@@ -2740,6 +2850,20 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &934592846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934592840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 934592840}
 --- !u!1 &950493579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,6 +3064,22 @@ MonoBehaviour:
     RewardItem: {fileID: 11400000, guid: 43b18c0d92b90b19e81d8b60ec95bfb6, type: 2}
     haveFinishedInteracting: 0
     interactionID: NPC_rwd
+    useCustomOpenDialogueSound: 0
+    openDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    useCustomCloseDialogueSound: 0
+    closeDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     sentences:
     - This NPC will give you item after it finished the dialogue
     - bla bla bla bla
@@ -2947,6 +3087,10 @@ MonoBehaviour:
     nextSentences: []
     finalSentences:
     - this is the final sentences
+    useVoiceOver: 0
+    sentencesVO: []
+    nextSentencesVO: []
+    finalSentencesVO: []
     question:
       haveQuestion: 0
       questionText: 
@@ -3148,6 +3292,51 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
+--- !u!1 &1422108872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422108874}
+  - component: {fileID: 1422108873}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1422108873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422108872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31ec57d20b02f286aac76e4fa5a8177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1422108874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422108872}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 268251534}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1429372599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,12 +4007,50 @@ MonoBehaviour:
     RewardItem: {fileID: 0}
     haveFinishedInteracting: 0
     interactionID: NPC_qq
+    useCustomOpenDialogueSound: 0
+    openDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    useCustomCloseDialogueSound: 0
+    closeDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
     sentences:
     - textendkfjasld;fjas;ldkfj;aslkdfj;lskjflskdjflksj
     - asdfasdfa sdfasdf
     - asdfasdfa
     nextSentences: []
     finalSentences: []
+    useVoiceOver: 1
+    sentencesVO:
+    - Guid:
+        Data1: 725338599
+        Data2: 1271407649
+        Data3: -829970020
+        Data4: -1355189671
+      Path: event:/CustomsTestings/Cat_UIIAIIUUIIAI
+    - Guid:
+        Data1: 574629614
+        Data2: 1270473612
+        Data3: -1455603034
+        Data4: 1487821121
+      Path: event:/CustomsTestings/Cat_WIWIWI_Motivational
+    - Guid:
+        Data1: 264641253
+        Data2: 1109941365
+        Data3: -1463403618
+        Data4: 185679444
+      Path: event:/CustomsTestings/ElevatorMusic
+    nextSentencesVO: []
+    finalSentencesVO: []
     question:
       haveQuestion: 0
       questionText: 
@@ -4485,6 +4712,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1057522711}
+  - {fileID: 1422108874}
   - {fileID: 1429372600}
   - {fileID: 1985761997}
   - {fileID: 934592843}

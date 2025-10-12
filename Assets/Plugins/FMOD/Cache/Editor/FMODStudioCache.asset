@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6363591643771603244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CustomsTestings/ElevatorMusic
+  m_EditorClassIdentifier: 
+  Path: event:/CustomsTestings/ElevatorMusic
+  Guid:
+    Data1: 264641253
+    Data2: 1109941365
+    Data3: -1463403618
+    Data4: 185679444
+  Banks:
+  - {fileID: -5247046785210327089}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12068
 --- !u!114 &-5820840255518728633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,12 +42,32 @@ MonoBehaviour:
   Path: ../../../Documents/AR_NEW_004/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638958842891191252
+  lastModified: 638958900799233557
   FileSizes:
   - Name: Desktop
     Value: 5280
   Exists: 1
---- !u!114 &-3952398800218006104
+--- !u!114 &-5247046785210327089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/CustomsTestings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../Documents/AR_NEW_004/Build/Desktop/CustomsTestings.bank
+  Name: CustomsTestings
+  StudioPath: bank:/CustomsTestings
+  lastModified: 638958902337105081
+  FileSizes:
+  - Name: Desktop
+    Value: 323840
+  Exists: 1
+--- !u!114 &-559412130310232580
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,14 +77,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ExitDialogue
+  m_Name: event:/Dialogues/OpenDialogue
   m_EditorClassIdentifier: 
-  Path: event:/ExitDialogue
+  Path: event:/Dialogues/OpenDialogue
   Guid:
-    Data1: -989585323
-    Data2: 1212110277
-    Data3: -1921275227
-    Data4: 374023461
+    Data1: -597759810
+    Data2: 1277070054
+    Data3: 442198715
+    Data4: -1516975805
   Banks:
   - {fileID: -5820840255518728633}
   IsStream: 0
@@ -63,22 +110,26 @@ MonoBehaviour:
   - {fileID: 7594199149459712826}
   - {fileID: 8161006524092311253}
   - {fileID: -5820840255518728633}
+  - {fileID: -5247046785210327089}
   EditorEvents:
-  - {fileID: -3952398800218006104}
-  - {fileID: 2286896148534359706}
+  - {fileID: 3779134282700697215}
+  - {fileID: -559412130310232580}
+  - {fileID: -6363591643771603244}
+  - {fileID: 6824364286553580171}
+  - {fileID: 959624219779683276}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8161006524092311253}
   StringsBanks:
   - {fileID: 7594199149459712826}
   cacheVersion: 131849
-  cacheTime: 638958842891191252
+  cacheTime: 638958902337105081
   SerializableEventsDict:
-  - key: event:/ExitDialogue
+  - key: event:/Dialogues/ExitDialogue
     index: 0
-  - key: event:/OpenDialogue
+  - key: event:/Dialogues/OpenDialogue
     index: 1
---- !u!114 &2286896148534359706
+--- !u!114 &959624219779683276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,14 +139,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/OpenDialogue
+  m_Name: event:/CustomsTestings/Cat_WIWIWI_Motivational
   m_EditorClassIdentifier: 
-  Path: event:/OpenDialogue
+  Path: event:/CustomsTestings/Cat_WIWIWI_Motivational
   Guid:
-    Data1: -597759810
-    Data2: 1277070054
-    Data3: 442198715
-    Data4: -1516975805
+    Data1: 574629614
+    Data2: 1270473612
+    Data3: -1455603034
+    Data4: 1487821121
+  Banks:
+  - {fileID: -5247046785210327089}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15281
+--- !u!114 &3779134282700697215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogues/ExitDialogue
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogues/ExitDialogue
+  Guid:
+    Data1: -989585323
+    Data2: 1212110277
+    Data3: -1921275227
+    Data4: 374023461
   Banks:
   - {fileID: -5820840255518728633}
   IsStream: 0
@@ -105,6 +183,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6824364286553580171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CustomsTestings/Cat_UIIAIIUUIIAI
+  m_EditorClassIdentifier: 
+  Path: event:/CustomsTestings/Cat_UIIAIIUUIIAI
+  Guid:
+    Data1: 725338599
+    Data2: 1271407649
+    Data3: -829970020
+    Data4: -1355189671
+  Banks:
+  - {fileID: -5247046785210327089}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5720
 --- !u!114 &7594199149459712826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,10 +225,10 @@ MonoBehaviour:
   Path: ../../../Documents/AR_NEW_004/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638958842890895227
+  lastModified: 638958902329836747
   FileSizes:
   - Name: Desktop
-    Value: 874
+    Value: 1124
   Exists: 1
 --- !u!114 &8161006524092311253
 MonoBehaviour:
@@ -140,7 +245,7 @@ MonoBehaviour:
   Path: ../../../Documents/AR_NEW_004/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638958842890886175
+  lastModified: 638958902329814805
   FileSizes:
   - Name: Desktop
     Value: 1074
