@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 [System.Serializable]
 public class Dialogue
@@ -22,8 +23,14 @@ public class Dialogue
     public Item RewardItem;
 
     public bool haveFinishedInteracting = false;
-    
+
     public string interactionID;
+
+    [Header("Sound Settings")]
+    public bool useCustomOpenDialogueSound;
+    public EventReference openDialogue;
+    public bool useCustomCloseDialogueSound;
+    public EventReference closeDialogue;
 
     [Space]
 
