@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using FMODUnity;
+using FMOD.Studio;
 using TMPro;
 using UnityEngine;
 
@@ -18,13 +19,11 @@ public class DialogueManager : MonoBehaviour
     // GameMaster gm;
 
     Queue<string> sentences;
+    Queue<EventInstance> voiceOvers;
+    EventInstance currentVoiceOver;
     Dialogue dlg;
 
     public static DialogueManager instance;
-
-    [Header("Sound Settings")]
-    [SerializeField] private EventReference dialogueOpenSound;
-    [SerializeField] private EventReference dialogueCloseSound;
 
     void Awake()
     {
@@ -37,6 +36,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new();
+        voiceOvers = new();
         // gm = GameMaster.instance;
     }
 
@@ -46,7 +46,7 @@ public class DialogueManager : MonoBehaviour
         if (dialogue.useCustomOpenDialogueSound)
             AudioManager.instance.PlayOneShot(dialogue.openDialogueSound, Camera.main.transform.position);
         else
-            AudioManager.instance.PlayOneShot(dialogueOpenSound, Camera.main.transform.position);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.dialogueEnter, Camera.main.transform.position);
 
         Debug.Log("Dialog Start with : " + dialogue.name);
         PlayerInteraction.onInteraction = true;
@@ -67,6 +67,7 @@ public class DialogueManager : MonoBehaviour
         // Chained Quest system??
 
         sentences.Clear();
+        voiceOvers.Clear();
 
         if (!isInSecondDialogue)
         {
@@ -74,12 +75,22 @@ public class DialogueManager : MonoBehaviour
             {
                 sentences.Enqueue(sentence);
             }
+
+            foreach (EventReference voices in dialogue.sentencesVO)
+            {
+                voiceOvers.Enqueue(AudioManager.instance.CreateEventInstance(voices));
+            }
         }
         else
         {
             foreach (string sentence in dialogue.nextSentences)
             {
                 sentences.Enqueue(sentence);
+            }
+
+            foreach (EventReference voices in dialogue.nextSentencesVO)
+            {
+                voiceOvers.Enqueue(AudioManager.instance.CreateEventInstance(voices));
             }
         }
 
@@ -108,9 +119,20 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        if (dlg.useVoiceOver)
+            currentVoiceOver.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
         string sentence = sentences.Dequeue();
 
+        if (dlg.useVoiceOver)
+        {
+            EventInstance _voiceOver = voiceOvers.Dequeue();
+            currentVoiceOver = _voiceOver;
+        }
+
         StopAllCoroutines();
+        if (dlg.useVoiceOver)
+            currentVoiceOver.start();
 
         StartCoroutine(TypeSentence(sentence));
     }
@@ -118,11 +140,16 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         // play dialogue close sound
-         if (dlg.useCustomCloseDialogueSound)
+        if (dlg.useCustomCloseDialogueSound)
             AudioManager.instance.PlayOneShot(dlg.closeDialogueSound, Camera.main.transform.position);
         else
-            AudioManager.instance.PlayOneShot(dialogueCloseSound, Camera.main.transform.position);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.dialogueClose, Camera.main.transform.position);
 
+        if (dlg.useVoiceOver)
+        {
+            currentVoiceOver.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            currentVoiceOver.release();
+        }
 
         PlayerInteraction.onInteraction = false;
         Debug.Log("End of dialogue");
