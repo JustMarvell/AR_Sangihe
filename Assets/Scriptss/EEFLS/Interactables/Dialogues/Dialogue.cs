@@ -28,9 +28,9 @@ public class Dialogue
 
     [Header("Sound Settings")]
     public bool useCustomOpenDialogueSound;
-    public EventReference openDialogue;
+    public EventReference openDialogueSound;
     public bool useCustomCloseDialogueSound;
-    public EventReference closeDialogue;
+    public EventReference closeDialogueSound;
 
     [Space]
 
