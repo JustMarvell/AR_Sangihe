@@ -9,6 +9,8 @@ public class PlayerInteraction : MonoBehaviour
     public float interactionRadius = 3f;
     // public float enemyAttackingRadius = 1f;  // future use if needed
     public static bool onInteraction = false;
+    public string interactButtonString = "interactButton";
+    public GameObject interactButton;
 
     public Interactable focus;
 
@@ -17,6 +19,18 @@ public class PlayerInteraction : MonoBehaviour
     Interactable interactable;
 
     float[] dist;
+
+    void Update()
+    {
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, interactionRadius, interactionLayer) && !onInteraction)
+        {
+            interactButton?.SetActive(true);
+        }
+        else
+        {
+            interactButton?.SetActive(false);
+        }
+    }
 
     public void TriggerInteract()
     {
@@ -77,5 +91,11 @@ public class PlayerInteraction : MonoBehaviour
 
         interactable = null;
         focus = null;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, transform.forward);
     }
 }

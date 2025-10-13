@@ -11,7 +11,7 @@ public class ARObjectPlace : MonoBehaviour
     private ARRaycastManager raycastManager;
     private GameObject spawnedObject;
 
-    private Vector3 YOFFSET = new(0, .002f, 0);
+    public Vector3 YOFFSET = new(0, .002f, 0);
 
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
