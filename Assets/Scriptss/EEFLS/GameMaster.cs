@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -40,5 +42,17 @@ public class GameMaster : MonoBehaviour
     public bool GetInteractableState(string id)
     {
         return interactableStates.ContainsKey(id) && interactableStates[id];
+    }
+
+    public async Task LoadSceneAsync(string sceneID)
+    {
+        Debug.Log("Loading Scene.....");
+        await SceneManager.LoadSceneAsync(sceneID, LoadSceneMode.Single).AsTask();
+        Debug.Log("Done Loading Scene..");
+    }
+
+    public void LoadSceneAsyncByString(string sceneID)
+    {
+        _ = LoadSceneAsync(sceneID);
     }
 }

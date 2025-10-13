@@ -26,6 +26,6 @@ public class EventInteraction : Interactable
         if (sceneToLoad == "")
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         else
-            SceneManager.LoadScene(sceneToLoad);
+            GameMaster.instance.LoadSceneAsyncByString(sceneToLoad);
     }
 }
