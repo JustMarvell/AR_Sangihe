@@ -709,17 +709,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &724112186 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3740408994816761698, guid: edf5f46b8a343d069ae957d42a4560e3, type: 3}
-  m_PrefabInstance: {fileID: 200125352}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8ce1d89558a2e092b6ba8cd86cc4353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &931638429
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,7 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1373,6 +1362,7 @@ GameObject:
   - component: {fileID: 1698522742}
   - component: {fileID: 1698522741}
   - component: {fileID: 1698522740}
+  - component: {fileID: 1698522743}
   m_Layer: 5
   m_Name: BackToExplore
   m_TagString: Untagged
@@ -1444,9 +1434,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 724112186}
-        m_TargetAssemblyTypeName: GameMaster, Assembly-CSharp
-        m_MethodName: LoadSceneAsyncByString
+      - m_Target: {fileID: 1698522743}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadSceneAsync
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1494,6 +1484,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698522738}
   m_CullTransparentMesh: 1
+--- !u!114 &1698522743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698522738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b50fc6d03020f9f7bef0172084ddecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1828213615 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2661858346938573621, guid: 1cfbacd36c564fae9b9baeb6bea1439d, type: 3}
@@ -1533,15 +1535,15 @@ RectTransform:
   m_GameObject: {fileID: 1960274731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.74, y: 0.74, z: 0.74}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1681409176}
   m_Father: {fileID: 931638433}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288.8, y: -219.3}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -107.3, y: 31.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1960274733
