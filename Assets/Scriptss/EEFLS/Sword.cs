@@ -13,6 +13,7 @@ public class Sword : WeaponBase
             if (currentCollider != oldCollider)
             {
                 currentCollider.gameObject.SendMessage("TakeDamage", weaponStats.baseDamage);
+                currentCollider.gameObject.SendMessage("ChangeState", EnemyNavigation.STATE.HIT);
             }
         }
     }

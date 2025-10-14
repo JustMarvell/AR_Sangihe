@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class EnemyManager : MonoBehaviour
 {
+    public bool spawnOnStart = false;
     public int maxEnemyCount = 10;
     public int currentEnemyCount;
 
@@ -20,6 +21,12 @@ public class EnemyManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+    }
+
+    void Start()
+    {
+        if (spawnOnStart)
+            SpawnEnemy();
     }
 
     public void SpawnEnemy()

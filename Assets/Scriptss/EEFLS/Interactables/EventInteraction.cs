@@ -18,6 +18,7 @@ public class EventInteraction : Interactable
     public override void Interact()
     {
         base.Interact();
+        PlayerInteraction.onInteraction = false;
 
         GameMaster.instance.SetInteractableState(interactableID, true);
 

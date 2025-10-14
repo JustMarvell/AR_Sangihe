@@ -9,5 +9,6 @@ public class PlayerManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+        playerStats?.InitializePlayerStats();
     }
 }
