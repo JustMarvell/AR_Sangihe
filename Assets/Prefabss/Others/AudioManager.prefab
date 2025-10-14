@@ -95,11 +95,11 @@ MonoBehaviour:
       Data2: 1277070054
       Data3: 442198715
       Data4: -1516975805
-    Path: event:/Dialogues/OpenDialogue
+    Path: event:/Dialogues/SFX/Default/OpenDialogue
   <dialogueClose>k__BackingField:
     Guid:
       Data1: -989585323
       Data2: 1212110277
       Data3: -1921275227
       Data4: 374023461
-    Path: event:/Dialogues/ExitDialogue
+    Path: event:/Dialogues/SFX/Default/ExitDialogue

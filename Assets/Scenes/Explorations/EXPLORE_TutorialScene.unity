@@ -119,201 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &24943671
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1826561056045057972, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_text
-      value: '?'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1826561056045057972, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
-    - target: {fileID: 1826561056045057972, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 1826561056045057972, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 1972140078956893408, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1972140078956893408, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1972140078956893408, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1972140078956893408, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.997254
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.036643673
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.99932843
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -184.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_Name
-      value: npc (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 24943675}
-    - targetCorrespondingSourceObject: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 24943674}
-  m_SourcePrefab: {fileID: 100100000, guid: 707fc04c2cebaea43b7691d24ab3a671, type: 3}
---- !u!1 &24943672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
-    type: 3}
-  m_PrefabInstance: {fileID: 24943671}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &24943673 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3445191370362510582, guid: 707fc04c2cebaea43b7691d24ab3a671,
-    type: 3}
-  m_PrefabInstance: {fileID: 24943671}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &24943674
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24943672}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.40596688, y: 1.9141477, z: 0.35295123}
-  m_Center: {x: -0, y: 0.89728296, z: 0}
---- !u!114 &24943675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24943672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8886fed664e6a086dbf5fece12bf73ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableRadius: 3.82
-  interactionTransform: {fileID: 24943673}
-  hasInteracted: 0
-  showDebug: 1
-  debugColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  interactableID: 111123
-  finishedInteracted: 0
-  sceneToLoad: TestingScene
 --- !u!1 &45581016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,9 +1333,9 @@ MonoBehaviour:
   m_fontSize: 28
   m_fontSizeBase: 28
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 14
+  m_fontSizeMax: 28
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -3124,7 +2929,7 @@ PrefabInstance:
     - target: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
         type: 3}
       propertyPath: m_Name
-      value: npc
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
         type: 3}
@@ -3138,11 +2943,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1105938639}
+      addedObject: {fileID: 1105938640}
     - targetCorrespondingSourceObject: {fileID: 3689021314226892514, guid: 707fc04c2cebaea43b7691d24ab3a671,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1105938640}
+      addedObject: {fileID: 1105938641}
   m_SourcePrefab: {fileID: 100100000, guid: 707fc04c2cebaea43b7691d24ab3a671, type: 3}
 --- !u!1 &1105938637 stripped
 GameObject:
@@ -3156,26 +2961,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1105938636}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1105938639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105938637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8886fed664e6a086dbf5fece12bf73ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableRadius: 3.82
-  interactionTransform: {fileID: 1105938638}
-  hasInteracted: 0
-  showDebug: 1
-  debugColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  interactableID: 111123
-  finishedInteracted: 0
-  sceneToLoad: AR_NPC_Interact_1
 --- !u!65 &1105938640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3197,6 +2982,96 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.40596688, y: 1.9141477, z: 0.35295123}
   m_Center: {x: -0, y: 0.89728296, z: 0}
+--- !u!114 &1105938641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105938637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966f470851030a6e7b6072ef56985d2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableRadius: 3
+  interactionTransform: {fileID: 1105938638}
+  hasInteracted: 0
+  showDebug: 0
+  debugColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  dialogue:
+    name: Tutorial
+    obstaclesToDelete: []
+    objectsToActivate: []
+    haveRequirement: 0
+    RequiredItem: {fileID: 0}
+    RewardItem: {fileID: 0}
+    haveFinishedInteracting: 0
+    interactionID: 
+    useCustomOpenDialogueSound: 0
+    openDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    useCustomCloseDialogueSound: 0
+    closeDialogueSound:
+      Guid:
+        Data1: 0
+        Data2: 0
+        Data3: 0
+        Data4: 0
+      Path: 
+    sentences:
+    - 'Selamat datang di game Sangihe Chronicles. Sebelum mulai bermain, ayo kita
+      dahulukan dengan tutorial memainkan game ini. '
+    - 'Game Sangihe chronicles akan membawa kamu untuk menjelajahi cerita-cerita
+      rakyat daerah sangihe, mengetahui lebih dalam tentang budaya sangihe, dan masih
+      banyak lagi. '
+    - Saat memasuki level, pertama anda akan mengontrol karakter untuk menjelajahi
+      lingkungan yang ada. didalam level yang tersedia, anda dapat berinteraksi dengan
+      NPC, mengambil item, memasuki event, dan lainnya.
+    - saat player mendekati NPC, item, ataupun event. Player akan memasuki Tampilan
+      Alternate-Reality. Dalam tampilan ini, player dapat berinteraksi dengan NPC,
+      Item, ataupun event yang player dekati tadi dalam sebuah ruang yang menggunakan
+      Alternate-Reality.
+    nextSentences: []
+    finalSentences: []
+    useVoiceOver: 1
+    sentencesVO:
+    - Guid:
+        Data1: -684563871
+        Data2: 1234206309
+        Data3: 1731188401
+        Data4: -50476287
+      Path: event:/Dialogues/TutorialAIVO/T_VO_WelcomeIntro
+    - Guid:
+        Data1: -1120082975
+        Data2: 1274605868
+        Data3: 1173636006
+        Data4: 1840203756
+      Path: event:/Dialogues/TutorialAIVO/T_VO_GameDesc
+    - Guid:
+        Data1: 1967362818
+        Data2: 1080416262
+        Data3: -414676058
+        Data4: -664556353
+      Path: event:/Dialogues/TutorialAIVO/T_VO_ExploreIntro
+    - Guid:
+        Data1: -1638184362
+        Data2: 1327108113
+        Data3: 1276878746
+        Data4: 1945106767
+      Path: event:/Dialogues/TutorialAIVO/T_VO_ARInteractIntro
+    nextSentencesVO: []
+    finalSentencesVO: []
+    question:
+      haveQuestion: 0
+      questionText: 
+      answers: []
+      correctAnswerIndex: 0
 --- !u!1001 &1147375094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5168,5 +5043,4 @@ SceneRoots:
   - {fileID: 127882219}
   - {fileID: 755355094}
   - {fileID: 1105938636}
-  - {fileID: 24943671}
   - {fileID: 1313304066}
