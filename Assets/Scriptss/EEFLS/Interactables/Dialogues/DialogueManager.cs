@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     public static bool IsInDialogue;
     public bool isInSecondDialogue = false;
+    public float dialogeTextSpeed = .1f;
 
     public GameObject[] deactivateWhenInDialogue;
 
@@ -221,7 +222,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(1f / dialogeTextSpeed * Time.deltaTime);
         }
     }
 
