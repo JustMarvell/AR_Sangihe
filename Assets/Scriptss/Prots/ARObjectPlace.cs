@@ -11,6 +11,7 @@ public class ARObjectPlace : MonoBehaviour
     private ARRaycastManager raycastManager;
     private GameObject spawnedObject;
 
+    
     public Vector3 YOFFSET = new(0, .002f, 0);
 
     private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
@@ -37,5 +38,19 @@ public class ARObjectPlace : MonoBehaviour
                 spawnedObject.transform.SetPositionAndRotation(hitPose.position + YOFFSET, hitPose.rotation);
             }
         }
+    }
+
+    public void SpawnBasedOnHeight()
+    {
+        Vector3 cameraPosition = Camera.main.transform.localPosition;
+        cameraPosition.y *= -1;
+        Quaternion cameraRotation = Camera.main.transform.localRotation;
+        cameraRotation.x = 0;
+        cameraRotation.z = 0;
+
+        if (spawnedObject == null)
+            spawnedObject = Instantiate(prefabToSpawn, cameraPosition, cameraRotation);
+        else
+            spawnedObject.transform.SetPositionAndRotation(cameraPosition, cameraRotation);
     }
 }
