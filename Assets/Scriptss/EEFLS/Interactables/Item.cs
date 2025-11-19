@@ -6,6 +6,7 @@ public class Item : ScriptableObject
     public string itemName = "New Item";
     public GameObject itemPrefab;
     public Sprite icon = null;
+    public Sprite realImage = null;
     public bool isDefaultItem = false;
 
     [Space]

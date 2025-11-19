@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485ee339767d7368e935af75adc0d354, type: 3}
+  m_Name: Peda
+  m_EditorClassIdentifier: 
+  itemName: Peda
+  itemPrefab: {fileID: 1401835036958546807, guid: 05903d856235d4ca5b937a59cd447f2d,
+    type: 3}
+  icon: {fileID: 21300000, guid: 8b3333161ffa4ee36bce81967ef2e32b, type: 3}
+  realImage: {fileID: 0}
+  isDefaultItem: 0
+  itemDescription: Peda adalah senjata trandisional yang berasal dari sangihe. Peda
+    juga memiliki nama lain yaitu "Bara". Peda/Bara saat ini digunakan selain untuk
+    keperluan sehari-hari oleh masyarakat sangihe, juga digunakan dalam ritual tertentu.

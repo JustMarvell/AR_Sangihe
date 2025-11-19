@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485ee339767d7368e935af75adc0d354, type: 3}
+  m_Name: Tagonggong
+  m_EditorClassIdentifier: 
+  itemName: Tagonggong
+  itemPrefab: {fileID: 1236103050018649180, guid: 41b86887329f6f009856cb58a743f080,
+    type: 3}
+  icon: {fileID: 21300000, guid: e2b85e6b325750d149768dc40d9ed136, type: 3}
+  realImage: {fileID: 0}
+  isDefaultItem: 0
+  itemDescription: Tagonggong adalah salah satu alat musik tradisional yang berasal
+    di sangihe. Alat musik ini dimainkan dengan cara di tepuk dan biasanya dimainkan
+    untuk mengiringi tari-tarian tradisional maupun dimainkan bersama-sama dengan
+    alat musik tradisional lainnya.
